@@ -1,0 +1,21 @@
+<div id="<%= dom_id animal %>" class="animal-container">
+  <h2 class="animal-title"><%= animal.name %></h2>
+  <table class="animal-details">
+    <tr>
+      <th>Fecha de nacimiento</th>
+      <td><%= animal.date_of_birth %></td>
+    </tr>
+    <tr>
+      <th>Intentos de escape</th>
+      <td><%= animal.escape_attempts %></td>
+    </tr>
+    <tr>
+      <th>Esterilizado</th>
+      <td><%= animal.neutered ? "Sí" : "No" %></td>
+    </tr>
+    <tr>
+      <th>Peso (kg)</th>
+      <td><%= animal.weight_kg %></td>
+    </tr>
+  </table>
+</div>
